@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Image Tag Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0px 0px 8px gray;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Image Tag Demonstration</h1>
+    <p>Example of adding images in a webpage</p>
+</header>
+
+<div class="container">
+
+    <h2>Example 1: Image from Local Folder</h2>
+
+    <!-- Save an image in same folder and rename it as sample.jpg -->
+    <img src="sample.jpg" width="300" height="200" alt="Local Image">
+
+    <h2>Example 2: Image from Internet</h2>
+
+    <img src="https://via.placeholder.com/300x200.png?text=Sample+Image"
+         width="300"
+         height="200"
+         alt="Online Image">
+
+    <h2>Example 3: Image with Title</h2>
+
+    <img src="https://via.placeholder.com/300"
+         width="300"
+         alt="Image with title"
+         title="This is an example image">
+
+</div>
+
+<footer>
+    <p>Created by: Your Name | HTML Practical Assignment</p>
+</footer>
+
+</body>
+</html>
