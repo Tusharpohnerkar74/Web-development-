@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text Formatting Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: #2d3748;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .format-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .format-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .format-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .tag-name {
+            font-size: 0.85rem;
+            color: #667eea;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e7ff;
+        }
+
+        .example {
+            font-size: 1.1rem;
+            color: #2d3748;
+        }
+
+        strong { color: #e53e3e; }
+        i, em { color: #3182ce; font-style: italic; }
+        u { color: #38a169; text-decoration: underline; text-decoration-color: #38a169; text-decoration-thickness: 2px; }
+        mark { background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%); padding: 2px 8px; border-radius: 4px; }
+        small { color: #718096; font-size: 0.85rem; }
+        s, del { color: #9ca3af; text-decoration: line-through; }
+        ins { color: #059669; text-decoration: underline; text-decoration-color: #059669; text-decoration-thickness: 2px; }
+        code { background: #1a202c; color: #68d391; padding: 8px 12px; border-radius: 6px; font-family: 'Consolas', monospace; font-size: 0.9rem; }
+        samp { background: #2d3748; color: #fc8181; padding: 8px 12px; border-radius: 6px; font-family: 'Consolas', monospace; }
+        q { color: #805ad5; font-style: italic; }
+        q::before { content: '"'; color: #805ad5; font-size: 1.5rem; }
+        q::after { content: '"'; color: #805ad5; font-size: 1.5rem; }
+        cite { color: #d69e2e; font-style: italic; }
+        abbr { color: #e53e3e; border-bottom: 2px dotted #e53e3e; cursor: help; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HTML Text Formatting Showcase</h1>
+            <p>Explore various HTML text formatting tags with live examples</p>
+        </header>
+
+        <div class="format-grid">
+            <div class="format-card">
+                <div class="tag-name">&lt;strong&gt; - Strong Importance</div>
+                <div class="example"><strong>D.Y. Patil College of Engineering</strong></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;i&gt; - Italic Text</div>
+                <div class="example"><i>D.Y. Patil College of Engineering</i></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;em&gt; - Emphasized Text</div>
+                <div class="example"><em>D.Y. Patil College of Engineering</em></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;u&gt; - Underlined Text</div>
+                <div class="example"><u>D.Y. Patil College of Engineering</u></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;mark&gt; - Marked Text</div>
+                <div class="example"><mark>D.Y. Patil College of Engineering</mark></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;small&gt; - Smaller Text</div>
+                <div class="example"><small>D.Y. Patil College of Engineering</small></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;s&gt; / &lt;del&gt; - Strikethrough</div>
+                <div class="example"><s>Old College Name</s> / <del>Deleted Text</del></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;ins&gt; - Inserted Text</div>
+                <div class="example"><ins>New College Name</ins></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;code&gt; - Code Snippet</div>
+                <div class="example"><code>console.log("Hello");</code></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;samp&gt; - Sample Output</div>
+                <div class="example"><samp>Build successful!</samp></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;q&gt; - Inline Quotation</div>
+                <div class="example"><q>Knowledge is power</q></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;cite&gt; - Citation</div>
+                <div class="example"><cite>The Great Gatsby</cite></div>
+            </div>
+
+            <div class="format-card">
+                <div class="tag-name">&lt;abbr&gt; - Abbreviation</div>
+                <div class="example"><abbr title="D.Y. Patil College of Engineering and Technology">DYPCET</abbr></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
